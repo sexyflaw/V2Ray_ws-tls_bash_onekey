@@ -427,7 +427,7 @@ ssl_install() {
     fi
     judge "安装 SSL 证书生成脚本依赖"
 
-    curl https://get.acme.sh | sh -s email=sexyflaw@gmail.com
+    curl https://get.acme.sh | sh -s "email=sexyflaw@gmail.com"
     judge "安装 SSL 证书生成脚本"
 }
 domain_check() {
